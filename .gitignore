@@ -27,3 +27,8 @@
 *.exe
 *.out
 *.app
+
+#PlatformIO ignores
+.pioenvs/
+.piolibdeps/
+.sconsign.dblite

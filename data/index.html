@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+  <script src="main.js"></script>
+</head>
+<body ng-app="app">
+  <div ng-controller="main" class="container">
+    <div class="row col-md-12">
+      <h1>Simple Controllable Relay</h1>
+    </div>
+    <div class="row col-md-12">
+      <p>by Chris L. Bennett</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Device Name</label>
+          <input style="width:50%" type="text" class="form-control" ng-model="info.deviceName"></input>
+        </div>
+
+        <button class="btn btn-primary" ng-click="saveDeviceName()">Save</button>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <p>Direct Relay Control</p>
+        </div>
+        <div class="row">
+          <p>Heap: {{info.heap}}</p>
+        </div>
+        <div class="row">
+          <button class="btn btn-primary" ng-click="relayOn()">Relay On</button>
+          <button class="btn btn-primary" ng-click="relayOff()">Relay Off</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
