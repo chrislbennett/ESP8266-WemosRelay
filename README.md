@@ -31,8 +31,8 @@ The application does utilize SPIFFS for storing configuration as well as the sta
 
 * Configuration is stored within /config.json
 * Web application file system
- * index.html
- * main.js
+  * index.html
+  * main.js
 
 Don't forget to load SPIFFS into the device.
 pio run -t uploadfs
@@ -41,21 +41,21 @@ Web Server
 ----------
 Supported URLs
 * Static site (from SPIFFS)
- * index.html
- * main.js
+  * index.html
+  * main.js
 * /relayon
 * /relayoff
 * /reset
- * Triggers a CPU reset
+  * Triggers a CPU reset
 * /resetwifi
- * Reset Wifi Configuration (which will trigger setup Hotspot upon restarting)
+  * Reset Wifi Configuration (which will trigger setup Hotspot upon restarting)
 * /heap
- * Return available HEAP
+  * Return available HEAP
 Used for the AngularJS site
 * /info
- * HTTP_GET, REST based API used to retrieve configuration
+  * HTTP_GET, REST based API used to retrieve configuration
 * /settings
- * HTTP_POST, REST based API used to update configuration   
+  * HTTP_POST, REST based API used to update configuration   
 
 TODO
 ----
